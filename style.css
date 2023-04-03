@@ -1,0 +1,87 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background: #f1f1f1;
+  font-family: Open sans, Helvetica, sans-serif;
+  padding: clamp(20px, 5vw, 50px) 20px 10px;
+}
+
+h1 {
+  font-family: Raleway, sans-serif;
+  text-align: center;
+  font-weight: normal;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
+h1 span {
+  font-weight: 700;
+}
+
+.result {
+  max-width: 800px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+form input {
+  padding: 10px 5px;
+  font-size: 16px;
+  border-radius: 5px;
+  border-style: none;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+form input:focus {
+  outline-style: none;
+  border: 1px solid black;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+  grid-column: 1fr;
+  aspect-ratio: 1/1;
+}
+
+p {
+  text-align: center;
+}
+
+footer {
+  height: 200px;
+  display: none;
+}
+
+.go-up {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  cursor: pointer;
+}
