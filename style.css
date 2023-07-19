@@ -49,7 +49,7 @@ form input {
 
 form input:focus {
   outline-style: none;
-  border: 1px solid black;
+  outline: 1px solid black;
 }
 
 .gallery {
